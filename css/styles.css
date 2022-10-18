@@ -13,6 +13,7 @@
   --hero-background-color: rgba(47, 48, 58, 0.4);
   --social-links-main-color: #afb1b8;
   --social-links-footer-background-color: rgba(255, 255, 255, 0.1);
+  --modal-overlay-color: rgba(0, 0, 0, 0.2);
   --logo-font: raleway;
 }
 
@@ -214,6 +215,40 @@ img {
   background-color: var(--button-hover-color);
   outline: 0;
 }
+/* !!!!!!! HERO MODAL!!!!!!!! */
+
+.hero-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--modal-overlay-color);
+  pointer-events: none;
+  /* opacity: 0; */
+}
+
+.modal-order-form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  background-color: var(--white-color);
+  transform: translate(-50%, -50%);
+}
+
+.modal-exit-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: var(--white-color);
+}
+
 
 /* !!!!!!! ADVANTAGE SECTION!!!!!!!! */
 
