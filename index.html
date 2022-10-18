@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="./js/modal.js"></script>
 
     <title>HW-04-index</title>
   </head>
@@ -60,9 +61,8 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero-heading">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button">Замовити послугу</button>
+          <button data-modal-open type="button" class="hero-button">Замовити послугу</button>
         </div>
-
       </section>
       <section class="advantage section">
         <div class="container">
@@ -130,14 +130,10 @@
             <li class="item">
               <img class="about-image" src="./images/box_2.jpg" width="370" alt="Процес розробки" />
               <p class="about-info">Мобільні додатки</p>
-
-
             </li>
             <li class="item">
               <img class="about-image" src="./images/box_3.jpg" width="370" alt="Процес розробки" />
               <p class="about-info">Дизайнерські рішення</p>
-
-
             </li>
           </ul>
         </div>
@@ -531,9 +527,13 @@
       </div>
     </footer>
 
-    <div class="hero-modal">
+    <div data-modal class="hero-modal is-hidden">
       <div class="modal-order-form">
-        <button type="button" class="modal-exit-button"></button>
+        <button data-modal-close type="button" class="modal-exit-button">
+          <svg class="hero-modal-close-button" width="11" height="11">
+            <use href="./images/icons.svg#close-icon"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </body>
