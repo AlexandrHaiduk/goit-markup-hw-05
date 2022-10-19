@@ -220,7 +220,7 @@ img {
 }
 /* !!!!!!! HERO MODAL!!!!!!!! */
 
-.hero-modal {
+.hero-modal-overlay {
   position: fixed;
   left: 0;
   top: 0;
@@ -229,12 +229,12 @@ img {
   background-color: var(--modal-overlay-color);
 }
 
-.modal-order-form {
+.hero-modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  min-width: 528px;
+  min-height: 581px;
   background-color: var(--white-color);
   transform: translate(-50%, -50%);
 }
