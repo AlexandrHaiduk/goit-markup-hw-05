@@ -591,7 +591,7 @@ img {
 .project-list .item {
   flex-basis: calc((100% - 60px) / 3);
   transition-property: box-shadow;
-  transition-duration: 750ms;
+  transition-duration: var(--main-transition-duration);
   transition-timing-function: var(--main-transtition-timing-function);
 }
 .project-list .item:hover {
